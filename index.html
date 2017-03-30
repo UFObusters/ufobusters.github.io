@@ -741,7 +741,7 @@ html.template-minimal.page-interactive body {
   width: 100%;
 }
 .g-top-matter {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .g-top-matter h1 {
   line-height: 1.2;
@@ -965,6 +965,7 @@ p.g-kicker {
   font-size: 14px;
   opacity: 0.8;
 }
+
 /*html.g-ios7  {
   height: 100vh;
   overflow-x: hidden;
@@ -988,6 +989,8 @@ html.g-ios7.is-fixed {
   width: 100%;
 }*/
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
 
 <!-- <img src="https://static01.nyt.com/newsgraphics/2015/08/03/greenland-sketch/61f8a6b1ecf651277fa6e8bf16c7daacbfcb61d5/images/river.gif" style="width: 100%;" alt=""> -->
 
@@ -1003,7 +1006,6 @@ html.g-ios7.is-fixed {
           </video>
       </div>
 
-      <script>loadVideo(document.querySelector("#g-top-video"))</script>
 
       <h2 class="g-body">Finally we can prove that video killed the UFO phenomena</h2>
       <div class="g-byline g-body">By Martine de Vos, Davide Ceolin, Anca Dumitrache, Albert Merono and Benjamin Timmermans</div>
@@ -1040,15 +1042,26 @@ html.g-ios7.is-fixed {
 
 
 
-            <div class="g-picture-book" id="zoomer-greenland" data-slug="greenland">
+            <div id="mapoverlay" class="g-picture-book" id="zoomer-greenland" data-slug="greenland">
 
-<iframe width="100%" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col9+from+1PKdU9r7M3kZG9OEYQu559FLFLoHHLdAcAeubtl7-&amp;viz=MAP&amp;h=false&amp;lat=15.517646069659879&amp;lng=1.3862803874999452&amp;t=2&amp;z=2&amp;l=col9&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
+<iframe id="iframe" style="pointer-events: none;" width="100%" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col9+from+1PKdU9r7M3kZG9OEYQu559FLFLoHHLdAcAeubtl7-&amp;viz=MAP&amp;h=false&amp;lat=15.517646069659879&amp;lng=1.3862803874999452&amp;t=2&amp;z=2&amp;l=col9&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
 
   
-    <p class="g-picture-book__page white" data-pb-zoom="0.00304" data-pb-focus-x="0.5" data-pb-focus-y="0.5" style="position: absolute;bottom: 0px;left: 0px;padding: 10px;margin: 0px 0px 30px 50px;background-color: rgba(0,0,0,0.8);">There have been <b>80.000 UFO reports</b> spread all over the world. However, the rise of social media can mean the end of the UFO era. </p>
+    <p class="g-picture-book__page white" data-pb-zoom="0.00304" data-pb-focus-x="0.5" data-pb-focus-y="0.5" style="position: absolute;bottom: 0px;left: 0px;padding-top: 10px;padding-left:20px;padding-bottom:10px;margin: 0px 0px 30px 50px;background-color: rgba(0,0,0,0.8);">Over <b>80 000 UFO reports</b> have been registered all over the world. However, the rise of social media can mean the end of the UFO era. </p>
   
 </div>
           
+<script>
+$('#mapoverlay')
+  .mousedown(function() {
+    console.log('down');
+    $('#mapoverlay').css({pointerEvents: 'auto'});
+  });
+$('body').mouseup(function() {
+    console.log('up');
+    $('#iframe').css({pointerEvents: 'none'});
+  });
+</script>
 
         
 
@@ -1097,154 +1110,28 @@ html.g-ios7.is-fixed {
         
 
           
-            <div class="g-body g-graf"><p>But the research is under increasing fire by some Republican leaders in Congress, who deny or question the scientific consensus that human activities contribute to climate change.</p></div>
+            <div class="g-body g-graf">
+
+<div style="display: inline-block;float: right;margin-right: -150px;padding: 20px;">
+<img class="" src="believe.jpg" style="height:400px;">
+<p style="font-family: 'nyt-franklin', arial, sans-serif;font-size: 15px;"><i>"You have to be willing to see" - The X-Files</i></p> 
+</div>
+
+            <p>But the research is under increasing fire by some Republican leaders in Congress, who deny or question the scientific consensus that human activities contribute to climate change.</p></div>
           
 
           
-
-          
-
-
-
-          
-
-          
-
-          
-
-          
-
-          
-
-        
-
-          
-
-          
-
-          
-
-
-
-          
-
-          
-
-          
-
-          
-            <div class="g-ad-wrapper"></div>
-          
-
-          
-
-        
 
           
             <div class="g-body g-graf"><p>Leading the Republican charge on Capitol Hill is Representative Lamar Smith of Texas, the chairman of the House science committee, who has sought to cut $300 million from NASA’s budget for earth science and has started an inquiry into some 50 National Science Foundation grants. On Oct. 13, the committee subpoenaed scientists at the National Oceanic and Atmospheric Administration, seeking more than six years of internal deliberations, including “all documents and communications” related to the agency’s measurement of climate change.</p></div>
           
 
-          
 
-          
-
-
-
-          
-
-          
-
-          
-
-          
-
-          
-
-        
 
           
             <div class="g-body g-graf"><p>Any cuts could directly affect the work of Dr. Smith and his team, who are supported by a three-year, $778,000 grant from NASA, which must cover everything, including researchers’ salaries, flights, food, computers, scientific instruments and camping, safety and extreme cold-weather gear. Every scientist, Dr. Smith said, is keenly aware that the research costs “a tremendous amount of taxpayer money.”</p></div>
           
 
-          
-
-          
-
-
-
-          
-
-          
-
-          
-
-          
-
-          
-
-        
-
-          
-
-          
-
-          
-            <div class="g-img g-almost-full">
-              
-              
-<img class="g-lazy"
-  src="https://static01.nyt.com/packages/flash/multimedia/ICONS/transparent.png"
-  data-pattern="https://static01.nyt.com/newsgraphics/2015/08/03/greenland-sketch/assets/images/kanger-{{size}}.jpg"
-  data-ratio="0.6666666666666666" 
-  data-widths="[640,900,1254,1600]" 
-  >
-
-
-              
-                
-                
-<img class="g-mobile g-lazy"
-  src="https://static01.nyt.com/packages/flash/multimedia/ICONS/transparent.png"
-  data-pattern="https://static01.nyt.com/newsgraphics/2015/08/03/greenland-sketch/assets/images/kanger-mobile-{{size}}.jpg"
-  data-ratio="1" 
-  data-widths="[640,900,1254,1600]" 
-  >
-
-              
-
-              
-                <p class="g-caption">Kangerlussuaq, Greenland</p>
-              
-            </div>
-          
-
-
-
-          
-
-          
-
-          
-
-          
-
-          
-
-        
-
-          
-
-          
-
-          
-
-
-
-          
-
-          
-
-          
             <div class="g-body g-subhed"><h2>Getting Ready</h2></div>
           
 
