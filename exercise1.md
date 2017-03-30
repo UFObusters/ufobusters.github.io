@@ -15,4 +15,6 @@ Technology proves all UFO sighting reports fake
 ## How knowledgeable is your audience?
 - They know all about this topic
 - How difficult it is to check reliability of these reports
+  - We want to use advancement of tech, e.g. quality of photography
+  - We want to use data quality metrics, e.g. reduction of sighting reports after linking CSV with Wikipedia
 
