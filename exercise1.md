@@ -9,8 +9,10 @@ Technology proves all UFO sighting reports fake
 - Prototypical example for makingi them question what they take as valid evidence: even video evidence can be fake
 
 ## Who would you like to inform?
-- All those who 'want to believe'
+- All those who 'want to believe', but also more generally credulous people
 - Beware of news bubbles
+- Beware of fake news
+- Educate their skepticism
 
 ## How knowledgeable is your audience?
 - They know all about this topic
